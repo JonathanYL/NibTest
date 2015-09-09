@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FormField">
+            <connections>
+                <outlet property="errorLabel" destination="UtN-et-ihR" id="oNV-9a-Al4"/>
+                <outlet property="inputField" destination="mFm-e7-rPB" id="Swe-IB-uGp"/>
+                <outlet property="view" destination="RCV-Rb-z5H" id="6Rn-2C-dZc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="RCV-Rb-z5H" userLabel="View">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mFm-e7-rPB" userLabel="inputField">
+                    <rect key="frame" x="15" y="5" width="295" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="VqV-Mb-mT7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtN-et-ihR" userLabel="errorLabel">
+                    <rect key="frame" x="15" y="27" width="295" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.129807965" blue="0.34258202570000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.78726934049999997" green="1" blue="0.56222497419999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mFm-e7-rPB" secondAttribute="trailing" constant="10" id="6Cc-oa-VV4"/>
+                <constraint firstItem="UtN-et-ihR" firstAttribute="leading" secondItem="RCV-Rb-z5H" secondAttribute="leading" constant="15" id="B6E-Gb-h3Y"/>
+                <constraint firstAttribute="bottom" secondItem="UtN-et-ihR" secondAttribute="bottom" constant="2" id="H4S-24-5nR"/>
+                <constraint firstAttribute="centerY" secondItem="mFm-e7-rPB" secondAttribute="centerY" id="XDG-iG-Trg"/>
+                <constraint firstItem="mFm-e7-rPB" firstAttribute="leading" secondItem="RCV-Rb-z5H" secondAttribute="leading" constant="15" id="XuC-P3-fOG"/>
+                <constraint firstAttribute="trailing" secondItem="UtN-et-ihR" secondAttribute="trailing" constant="10" id="fXX-Lw-lwW"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
