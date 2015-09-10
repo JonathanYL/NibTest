@@ -71,7 +71,13 @@
     
     PartnerModel *partnerModel = self.partnerModels[indexPath.row];
     cell.titleLabel.text = partnerModel.title;
-    cell.contentLabel.text = @"nventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.";
+    cell.contentTitleLabel.text = @"This is the title for description";
+    
+    if (indexPath.row == 0) {
+        cell.contentDescriptionLabel.text = @"Hi there.";
+    } else {
+        cell.contentDescriptionLabel.text = @"nventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.";
+    }
     cell.partnerImageView.image = partnerModel.iconImage;
     cell.descriptionLabel.text = partnerModel.descriptionText;
     cell.withDetails = [self.expandedIndexPaths containsObject:indexPath];

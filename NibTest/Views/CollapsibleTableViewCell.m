@@ -24,6 +24,7 @@
     self.contentContainerView.backgroundColor = [UIColor blueColor];
     self.withDetails = NO;
     self.heightConstraint.constant = 0;
+    self.button.clipsToBounds = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
